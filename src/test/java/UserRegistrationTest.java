@@ -85,5 +85,19 @@ public class UserRegistrationTest {
         boolean result = userRegistration.emailIdValidator("abc()*@gmail.com");
         Assert.assertEquals(false, result);
     }
+    /**
+     * Unit test for validating mood of the User
+     */
+    @Test
+    public void givenMessage_WhenHappy_ShouldReturnEntrySuccessful() {
+        String result = MoodAnalyser.analyseMood("User is Happy");
+        Assert.assertEquals("Entry Successful", result);
+    }
+
+    @Test
+    public void givenMessage_WhenSad_ShouldReturnEntryFailed() {
+        String result = MoodAnalyser.analyseMood("User is Sad");
+        Assert.assertEquals("Entry Failed", result);
+    }
 }
 
