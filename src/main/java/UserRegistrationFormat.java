@@ -1,6 +1,13 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Purpose  - Junit Testing
+ * @author  - Ashvini Kanojia
+ * @version - 16.0
+ * @since   - 01-04-2022
+ */
+
 public class UserRegistrationFormat {
     Pattern pattern;
     Matcher matcher;
