@@ -8,4 +8,9 @@ public class UserRegistrationTest {
         boolean result = userRegistration.firstName("Rahul");
         Assert.assertTrue(result);
     }
+    @Test
+    public void giveLastName_WhenProper_ShouldReturnTrue(){
+        boolean result = userRegistration.lastName("Sharma");
+        Assert.assertTrue(result);
+    }
 }
