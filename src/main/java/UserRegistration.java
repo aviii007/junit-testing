@@ -9,7 +9,6 @@ import java.util.regex.Pattern;
  */
 
 public class UserRegistration {
-
     // Created a method to validate first name
     public boolean firstName(String firstName) throws UserRegistrationException {
         if (firstName == null) {
