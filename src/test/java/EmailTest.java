@@ -8,6 +8,7 @@ import java.util.Collection;
 @RunWith(Parameterized.class)
 public class EmailTest {
 
+
     @RunWith(Parameterized.class)
     public class emailTest {
         private String email;
