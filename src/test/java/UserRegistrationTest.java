@@ -10,7 +10,7 @@ public class UserRegistrationTest {
     }
     @Test
     public void giveLastName_WhenProper_ShouldReturnTrue(){
-        boolean result = userRegistration.lastName("Sharma");
+        boolean result = userRegistration.lastName("Kanojia");
         Assert.assertTrue(result);
     }
     @Test
