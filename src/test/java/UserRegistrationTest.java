@@ -10,7 +10,11 @@ public class UserRegistrationTest {
     }
     @Test
     public void giveLastName_WhenProper_ShouldReturnTrue(){
+ EmailSequenceValidation
         boolean result = userRegistration.lastName("Kanojia);
+=======
+        boolean result = userRegistration.lastName("Kanojia");
+ master
         Assert.assertTrue(result);
     }
     @Test
@@ -84,6 +88,20 @@ public class UserRegistrationTest {
     public void givenEmail1_WhenNotProper_ShouldReturnFalse() {
         boolean result = userRegistration.emailIdValidator("abc()*@gmail.com");
         Assert.assertEquals(false, result);
+    }
+    /**
+     * Unit test for validating mood of the User
+     */
+    @Test
+    public void givenMessage_WhenHappy_ShouldReturnEntrySuccessful() {
+        String result = MoodAnalyser.analyseMood("User is Happy");
+        Assert.assertEquals("Entry Successful", result);
+    }
+
+    @Test
+    public void givenMessage_WhenSad_ShouldReturnEntryFailed() {
+        String result = MoodAnalyser.analyseMood("User is Sad");
+        Assert.assertEquals("Entry Failed", result);
     }
 }
 
